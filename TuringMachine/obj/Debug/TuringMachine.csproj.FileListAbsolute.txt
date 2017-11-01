@@ -1,0 +1,10 @@
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\bin\Debug\TuringMachine.exe.config
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\bin\Debug\TuringMachine.exe
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\bin\Debug\TuringMachine.pdb
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.csprojResolveAssemblyReference.cache
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.Form1.resources
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.Properties.Resources.resources
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.csproj.GenerateResource.Cache
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.csproj.CoreCompileInputs.cache
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.exe
+C:\Users\comp1\Desktop\Turing\TuringMachine\TuringMachine\obj\Debug\TuringMachine.pdb
