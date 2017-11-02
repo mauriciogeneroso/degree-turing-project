@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TuringMachine.Properties
+namespace MaquinaDeTuring.Properties
 {
 
 
