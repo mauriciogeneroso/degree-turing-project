@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tbValue1 = new System.Windows.Forms.TextBox();
-            this.tbValue2 = new System.Windows.Forms.TextBox();
+            this.tbBase = new System.Windows.Forms.TextBox();
+            this.tbAltura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btStart = new System.Windows.Forms.Button();
-            this.btExit = new System.Windows.Forms.Button();
+            this.btIniciar = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tbValue1
+            // tbBase
             // 
-            this.tbValue1.Location = new System.Drawing.Point(107, 11);
-            this.tbValue1.Name = "tbValue1";
-            this.tbValue1.Size = new System.Drawing.Size(248, 20);
-            this.tbValue1.TabIndex = 0;
+            this.tbBase.Location = new System.Drawing.Point(107, 11);
+            this.tbBase.Name = "tbBase";
+            this.tbBase.Size = new System.Drawing.Size(248, 20);
+            this.tbBase.TabIndex = 0;
             // 
-            // tbValue2
+            // tbAltura
             // 
-            this.tbValue2.Location = new System.Drawing.Point(107, 41);
-            this.tbValue2.Name = "tbValue2";
-            this.tbValue2.Size = new System.Drawing.Size(248, 20);
-            this.tbValue2.TabIndex = 1;
+            this.tbAltura.Location = new System.Drawing.Point(107, 41);
+            this.tbAltura.Name = "tbAltura";
+            this.tbAltura.Size = new System.Drawing.Size(248, 20);
+            this.tbAltura.TabIndex = 1;
             // 
             // label1
             // 
@@ -75,33 +75,33 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Altura do triângulo:";
             // 
-            // btStart
+            // btIniciar
             // 
-            this.btStart.Location = new System.Drawing.Point(377, 9);
-            this.btStart.Name = "btStart";
-            this.btStart.Size = new System.Drawing.Size(75, 23);
-            this.btStart.TabIndex = 4;
-            this.btStart.Text = "Iniciar";
-            this.btStart.UseVisualStyleBackColor = true;
-            this.btStart.Click += new System.EventHandler(this.btStart_Click);
+            this.btIniciar.Location = new System.Drawing.Point(377, 9);
+            this.btIniciar.Name = "btIniciar";
+            this.btIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btIniciar.TabIndex = 4;
+            this.btIniciar.Text = "Iniciar";
+            this.btIniciar.UseVisualStyleBackColor = true;
+            this.btIniciar.Click += new System.EventHandler(this.btStart_Click);
             // 
-            // btExit
+            // btSair
             // 
-            this.btExit.Location = new System.Drawing.Point(377, 42);
-            this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(75, 23);
-            this.btExit.TabIndex = 5;
-            this.btExit.Text = "Sair";
-            this.btExit.UseVisualStyleBackColor = true;
-            this.btExit.Click += new System.EventHandler(this.button2_Click);
+            this.btSair.Location = new System.Drawing.Point(377, 42);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(75, 23);
+            this.btSair.TabIndex = 5;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btExit);
-            this.panel1.Controls.Add(this.tbValue1);
-            this.panel1.Controls.Add(this.btStart);
-            this.panel1.Controls.Add(this.tbValue2);
+            this.panel1.Controls.Add(this.btSair);
+            this.panel1.Controls.Add(this.tbBase);
+            this.panel1.Controls.Add(this.btIniciar);
+            this.panel1.Controls.Add(this.tbAltura);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 56);
@@ -119,15 +119,6 @@
             this.panel2.Size = new System.Drawing.Size(467, 38);
             this.panel2.TabIndex = 7;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Realiza o cálculo da área de um triângulo.";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -136,6 +127,15 @@
             this.label4.Size = new System.Drawing.Size(135, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Fórmula: (Base x Altura) / 2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Realiza o cálculo da área de um triângulo.";
             // 
             // Form1
             // 
@@ -157,12 +157,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbValue1;
-        private System.Windows.Forms.TextBox tbValue2;
+        private System.Windows.Forms.TextBox tbBase;
+        private System.Windows.Forms.TextBox tbAltura;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btStart;
-        private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.Button btIniciar;
+        private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;

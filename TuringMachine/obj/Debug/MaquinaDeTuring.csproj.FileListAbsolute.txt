@@ -1,0 +1,10 @@
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.exe.config
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.exe
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.pdb
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csprojResolveAssemblyReference.cache
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.Form1.resources
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.Properties.Resources.resources
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csproj.GenerateResource.Cache
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csproj.CoreCompileInputs.cache
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.exe
+E:\GitHub\ProgrammerGM\C#\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.pdb

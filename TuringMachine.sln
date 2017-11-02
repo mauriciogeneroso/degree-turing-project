@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuringMachine", "TuringMachine\TuringMachine.csproj", "{35EED8F1-30BA-4752-9A8A-A451BBC4DD0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaquinaDeTuring", "TuringMachine\MaquinaDeTuring.csproj", "{35EED8F1-30BA-4752-9A8A-A451BBC4DD0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

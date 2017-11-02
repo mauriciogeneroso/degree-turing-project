@@ -24,11 +24,22 @@ namespace MaquinaDeTuring
 
         private void btStart_Click(object sender, EventArgs e)
         {
-            String value1 = tbValue1.Text;
-            String value2 = tbValue2.Text;
+            int baseTriangulo = 0;
+            int altura = 0;
+            try
+            {
+                baseTriangulo = Convert.ToInt32(tbBase.Text);
+                altura = Convert.ToInt32(tbAltura.Text);
+            } catch(Exception excpt)
+            {
+                MessageBox.Show("Os valores informados estão incorretos", "Erro na entrada");
+                Console.WriteLine(excpt.Message);
+                return;
+            }
 
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
+            Cabecote cabecote = new Cabecote(baseTriangulo, altura);
+
+
         }
     }
 }
