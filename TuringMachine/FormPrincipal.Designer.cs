@@ -1,6 +1,6 @@
 ﻿namespace MaquinaDeTuring
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.tbBase = new System.Windows.Forms.TextBox();
             this.tbAltura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();

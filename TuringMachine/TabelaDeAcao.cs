@@ -35,7 +35,7 @@ namespace MaquinaDeTuring
                 new TabelaItens(Estados._7, Simbolos.ASTERISCO, Estados._7, Simbolos.ASTERISCO, Direcao.ESQUERDA),  // 7 e *, [7,*,E] 
                 new TabelaItens(Estados._7, Simbolos.BRANCO, Estados._0, Simbolos.BRANCO, Direcao.DIREITA),         // 7 e B, [0,_,D] 
                 new TabelaItens(Estados._8, Simbolos.ASTERISCO, Estados._8, Simbolos.BRANCO, Direcao.DIREITA),      // 8 e *, [8,_,D] 
-                new TabelaItens(Estados._8, Simbolos.BRANCO, Estados._9, Simbolos.FINAL, Direcao.DIREITA)           // 8 e B, [FIM] 
+                new TabelaItens(Estados._8, Simbolos.BRANCO, Estados._FINAL, Simbolos.BRANCO, Direcao.DIREITA)           // 8 e B, [FIM] 
                 //lista.Add(new Tabela(Estados._8, Simbolos.BRANCO, Estados._9, Simbolos.INICIAL, Direcao.DIREITA));           // 8 e B, [9,>,D]  -- Escreve inicial para começar a divisão
                 //lista.Add(new Tabela(Estados._9, Simbolos.ASTERISCO, Estados._10, Simbolos.ASTERISCO, Direcao.ESQUERDA));    // 9 e *, [10,*,E] -- Começa a divisão aqui, quando vai para o estado 10 com >
             };

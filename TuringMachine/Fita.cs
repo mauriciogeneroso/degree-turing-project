@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,12 @@ namespace MaquinaDeTuring
 {
     class Fita
     {
-        private String valor;
-        public String Valor { get { return valor; } set { valor = value; } }
+        private ArrayList valores;
+        public ArrayList Valores { get { return valores; } set { valores = value; } }
+
+        public Fita()
+        {
+            valores = new ArrayList();
+        }
     }
 }

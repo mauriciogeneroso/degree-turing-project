@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace MaquinaDeTuring
 {
 
-    public enum Simbolos { INICIAL, FINAL, ASTERISCO, BRANCO, AUXILIAR };
-    public enum Estados { _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10 };
+    public enum Simbolos { INICIAL = '>', ASTERISCO = '*', BRANCO = '_', AUXILIAR = 'A'};
+    public enum Estados { _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _FINAL};
     public enum Direcao { DIREITA, ESQUERDA };
 
     class TabelaItens
