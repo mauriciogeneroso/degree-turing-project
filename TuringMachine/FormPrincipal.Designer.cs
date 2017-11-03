@@ -39,6 +39,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbposição = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelFita = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -137,21 +141,61 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Realiza o cálculo da área de um triângulo.";
             // 
-            // Form1
+            // tbposição
+            // 
+            this.tbposição.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbposição.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbposição.Enabled = false;
+            this.tbposição.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbposição.Location = new System.Drawing.Point(12, 163);
+            this.tbposição.Name = "tbposição";
+            this.tbposição.Size = new System.Drawing.Size(467, 13);
+            this.tbposição.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 182);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(467, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // labelFita
+            // 
+            this.labelFita.AutoSize = true;
+            this.labelFita.Location = new System.Drawing.Point(16, 147);
+            this.labelFita.Name = "labelFita";
+            this.labelFita.Size = new System.Drawing.Size(0, 13);
+            this.labelFita.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 147);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Fita:";
+            // 
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 303);
+            this.ClientSize = new System.Drawing.Size(492, 222);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelFita);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbposição);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FormPrincipal";
             this.Text = "Maquina de Turing";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,6 +211,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbposição;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelFita;
+        private System.Windows.Forms.Label label5;
     }
 }
 
