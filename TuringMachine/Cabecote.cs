@@ -35,7 +35,7 @@ namespace MaquinaDeTuring
             }
         }
 
-        public void executar()
+        public void executar(System.Windows.Forms.TextBox atual, System.Windows.Forms.TextBox pos)
         {
             int posicaoAtual = 0;
             Simbolos simboloLido;
@@ -69,6 +69,8 @@ namespace MaquinaDeTuring
                     posicaoAtual--;
                 }
             }
+            atual.Text = fita.getFita();
+            pos.Text = "";
             Console.WriteLine(fita.Valores);
         }
 

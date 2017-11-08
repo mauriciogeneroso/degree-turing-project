@@ -38,7 +38,7 @@ namespace MaquinaDeTuring
             }
 
             Cabecote cabecote = new Cabecote(baseTriangulo, altura);
-            cabecote.executar();
+            cabecote.executar(tbatual, tbposição);
 
         }
     }

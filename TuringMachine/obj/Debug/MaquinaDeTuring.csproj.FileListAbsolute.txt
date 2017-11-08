@@ -18,3 +18,13 @@ C:\Users\comp16\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.cspr
 C:\Users\comp16\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csproj.CoreCompileInputs.cache
 C:\Users\comp16\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.exe
 C:\Users\comp16\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.pdb
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csprojResolveAssemblyReference.cache
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.FormPrincipal.resources
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.Properties.Resources.resources
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csproj.GenerateResource.Cache
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.csproj.CoreCompileInputs.cache
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.exe
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\obj\Debug\MaquinaDeTuring.pdb
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.exe.config
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.exe
+C:\Users\comp1\Source\Repos\Turing\TuringMachine\bin\Debug\MaquinaDeTuring.pdb

@@ -40,7 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbposição = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbatual = new System.Windows.Forms.TextBox();
             this.labelFita = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -152,12 +152,12 @@
             this.tbposição.Size = new System.Drawing.Size(467, 13);
             this.tbposição.TabIndex = 8;
             // 
-            // textBox1
+            // tbatual
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(467, 20);
-            this.textBox1.TabIndex = 9;
+            this.tbatual.Location = new System.Drawing.Point(12, 182);
+            this.tbatual.Name = "tbatual";
+            this.tbatual.Size = new System.Drawing.Size(467, 20);
+            this.tbatual.TabIndex = 9;
             // 
             // labelFita
             // 
@@ -183,7 +183,7 @@
             this.ClientSize = new System.Drawing.Size(492, 222);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelFita);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbatual);
             this.Controls.Add(this.tbposição);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbposição;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbatual;
         private System.Windows.Forms.Label labelFita;
         private System.Windows.Forms.Label label5;
     }
