@@ -13,6 +13,8 @@ namespace MaquinaDeTuring
 {
     public partial class FormPrincipal : Form
     {
+        private Thread thread;
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -20,6 +22,10 @@ namespace MaquinaDeTuring
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (thread != null)
+            {
+                thread.Abort();
+            }
             this.Close();
         }
 
@@ -41,10 +47,10 @@ namespace MaquinaDeTuring
             }
 
             Cabecote cabecote = new Cabecote(baseTriangulo, altura);
-            new Thread(() =>
+            thread = new Thread(() =>
                 cabecote.executar(this)
-            ).Start();
-
+            );
+            thread.Start();
         }
 
         delegate void OutputAtualDelegate(string data);
@@ -79,5 +85,12 @@ namespace MaquinaDeTuring
             tbposição.Text = data;
         }
 
+        private void fechar(object sender, FormClosedEventArgs e)
+        {
+            if (thread != null)
+            {
+                thread.Abort();
+            }
+        }
     }
 }

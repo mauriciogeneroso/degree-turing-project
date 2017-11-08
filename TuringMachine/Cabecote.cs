@@ -73,14 +73,17 @@ namespace MaquinaDeTuring
                 }
                 for(int i = -1; i < posicaoAtual; i++)
                 {
-                    fitaImprimir += "    ";
-                    
+                    fitaImprimir += "   ";
+                    if (fita.Valores[posicaoAtual].Equals(Simbolos.AUXILIAR))
+                    {
+                        fitaImprimir += " ";
+                    }
                 }
-                fitaImprimir += " | ";
+                fitaImprimir += " |";
                 form.UpdateAtualPub(fita.getFita());
                 form.UpdatePosPub(fitaImprimir);
                 
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(500);
             }
 
             
