@@ -43,6 +43,12 @@
             this.tbatual = new System.Windows.Forms.TextBox();
             this.labelFita = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbPosicaoStats = new System.Windows.Forms.TextBox();
+            this.tbEstadoAtualStats = new System.Windows.Forms.TextBox();
+            this.tbValorLidoStats = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -171,17 +177,71 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 147);
+            this.label5.Location = new System.Drawing.Point(12, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Fita:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(107, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Posição: ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(225, 140);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Estado Atual: ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(350, 140);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Valor Lido: ";
+            // 
+            // tbPosicaoStats
+            // 
+            this.tbPosicaoStats.Location = new System.Drawing.Point(164, 137);
+            this.tbPosicaoStats.Name = "tbPosicaoStats";
+            this.tbPosicaoStats.Size = new System.Drawing.Size(48, 20);
+            this.tbPosicaoStats.TabIndex = 15;
+            // 
+            // tbEstadoAtualStats
+            // 
+            this.tbEstadoAtualStats.Location = new System.Drawing.Point(294, 137);
+            this.tbEstadoAtualStats.Name = "tbEstadoAtualStats";
+            this.tbEstadoAtualStats.Size = new System.Drawing.Size(48, 20);
+            this.tbEstadoAtualStats.TabIndex = 16;
+            // 
+            // tbValorLidoStats
+            // 
+            this.tbValorLidoStats.Location = new System.Drawing.Point(405, 137);
+            this.tbValorLidoStats.Name = "tbValorLidoStats";
+            this.tbValorLidoStats.Size = new System.Drawing.Size(48, 20);
+            this.tbValorLidoStats.TabIndex = 17;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(492, 222);
+            this.Controls.Add(this.tbValorLidoStats);
+            this.Controls.Add(this.tbEstadoAtualStats);
+            this.Controls.Add(this.tbPosicaoStats);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelFita);
             this.Controls.Add(this.tbatual);
@@ -216,6 +276,12 @@
         private System.Windows.Forms.TextBox tbatual;
         private System.Windows.Forms.Label labelFita;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbPosicaoStats;
+        private System.Windows.Forms.TextBox tbEstadoAtualStats;
+        private System.Windows.Forms.TextBox tbValorLidoStats;
     }
 }
 

@@ -74,14 +74,30 @@ namespace MaquinaDeTuring
                 for(int i = -1; i < posicaoAtual; i++)
                 {
                     fitaImprimir += "   ";
-                    if (fita.Valores[posicaoAtual].Equals(Simbolos.AUXILIAR))
-                    {
-                        fitaImprimir += " ";
-                    }
                 }
                 fitaImprimir += " |";
                 form.UpdateAtualPub(fita.getFita());
                 form.UpdatePosPub(fitaImprimir);
+                form.UpdatePosicaoStatsPub((posicaoAtual).ToString());
+                String aux = registradorEstado.EstadoAtual.ToString();
+                form.UpdateStatusAtualPub(aux.Substring(1,aux.Length-1));
+                String valor = "";
+                switch (simboloLido.ToString())
+                {
+                    case "ASTERISCO":
+                        valor = "*";
+                        break;
+                    case "BRANCO":
+                        valor = "_";
+                       break;
+                    case "AUXILIAR":
+                        valor = "A";
+                        break;
+                    case "INICIAL":
+                        valor = ">";
+                        break;
+                }
+                form.UpdateValorLidoPub(valor);
                 
                 System.Threading.Thread.Sleep(500);
             }
