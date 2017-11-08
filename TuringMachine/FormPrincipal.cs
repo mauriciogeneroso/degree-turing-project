@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace MaquinaDeTuring
 {
@@ -22,6 +23,7 @@ namespace MaquinaDeTuring
             this.Close();
         }
 
+
         private void btStart_Click(object sender, EventArgs e)
         {
             int baseTriangulo = 0;
@@ -30,7 +32,8 @@ namespace MaquinaDeTuring
             {
                 baseTriangulo = Convert.ToInt32(tbBase.Text);
                 altura = Convert.ToInt32(tbAltura.Text);
-            } catch(Exception excpt)
+            }
+            catch (Exception excpt)
             {
                 MessageBox.Show("Os valores informados estão incorretos", "Erro na entrada");
                 Console.WriteLine(excpt.Message);
@@ -38,8 +41,43 @@ namespace MaquinaDeTuring
             }
 
             Cabecote cabecote = new Cabecote(baseTriangulo, altura);
-            cabecote.executar(tbatual, tbposição);
+            new Thread(() =>
+                cabecote.executar(this)
+            ).Start();
 
         }
+
+        delegate void OutputAtualDelegate(string data);
+
+        public void UpdateAtualPub(string data)
+        {
+            if (tbatual.InvokeRequired)
+                tbatual.Invoke(new OutputAtualDelegate(UpdateAtual),
+                new object[] { data });
+            else
+                UpdateAtual(data); //call directly
+        }
+
+        private void UpdateAtual(string data)
+        {
+            tbatual.Text = data;
+        }
+
+        delegate void OutputPosicaoDelegate(string data);
+
+        public void UpdatePosPub(string data)
+        {
+            if (tbatual.InvokeRequired)
+                tbatual.Invoke(new OutputPosicaoDelegate(UpdatePos),
+                new object[] { data });
+            else
+                UpdatePos(data); //call directly
+        }
+
+        private void UpdatePos(string data)
+        {
+            tbposição.Text = data;
+        }
+
     }
 }

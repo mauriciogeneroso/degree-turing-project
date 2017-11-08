@@ -151,6 +151,7 @@
             this.tbposição.Name = "tbposição";
             this.tbposição.Size = new System.Drawing.Size(467, 13);
             this.tbposição.TabIndex = 8;
+            this.tbposição.Text = " ";
             // 
             // tbatual
             // 

@@ -11,26 +11,29 @@ namespace MaquinaDeTuring
     {
         private ArrayList valores;
         public ArrayList Valores { get { return valores; } set { valores = value; } }
+        private int pos = 0;
+
+        public int Pos { get { return pos; }  }
+
+        public Fita()
+        {
+            valores = new ArrayList();
+        }
+
         public String getFita()
         {
             String retorno = "";
-            String asterisco = " * ", branco = " _ ", inicial = " > ";
-            bool flag = false;
+            String asterisco = " * ", branco = " _ ", inicial=" > ", auxiliar = " A ";
+      
             foreach (Simbolos i in Valores)
             {
-                if (i.ToString() == "ASTERISCO" && !flag)
-                {
-                    // se falso, troca true 
-                    flag = !flag;
-                    retorno += inicial;
-                    retorno += asterisco;
-                    continue;
-                }
-                if (!flag)
-                {
-                    continue;
-                }
+
                 // se ja tiver encontrado o segundo inicial
+                if (i.ToString() == "INICIAL")
+                {
+                    retorno += inicial;
+                    continue;
+                }
                 if (i.ToString() == "ASTERISCO")
                 {
                     retorno += asterisco;
@@ -41,12 +44,14 @@ namespace MaquinaDeTuring
                     retorno += branco;
                     continue;
                 }
+                if (i.ToString() == "AUXILIAR")
+                {
+                    retorno += auxiliar;
+                    continue;
+                }
             }
             return retorno;
         }
-        public Fita()
-        {
-            valores = new ArrayList();
-        }
+
     }
 }

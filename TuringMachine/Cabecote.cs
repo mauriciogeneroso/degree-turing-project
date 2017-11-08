@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace MaquinaDeTuring
 {
@@ -35,15 +36,16 @@ namespace MaquinaDeTuring
             }
         }
 
-        public void executar(System.Windows.Forms.TextBox atual, System.Windows.Forms.TextBox pos)
+        public void executar(FormPrincipal form)
         {
             int posicaoAtual = 0;
+            
             Simbolos simboloLido;
             Direcao irParaDirecao = Direcao.DIREITA;
-
             registradorEstado.EstadoAtual = Estados._0;
             while (registradorEstado.EstadoAtual != Estados._FINAL)
             {
+                String fitaImprimir = "";
                 simboloLido = this.LeFita(posicaoAtual);
 
                 foreach(TabelaItens tbItens in tabelaDeAcao.Tabela)
@@ -56,8 +58,9 @@ namespace MaquinaDeTuring
                         break;
                     }
                 }
+
                 
-                if(irParaDirecao == Direcao.DIREITA)
+                if (irParaDirecao == Direcao.DIREITA)
                 {
                     if (posicaoAtual == fita.Valores.Count - 1)
                     {
@@ -68,9 +71,19 @@ namespace MaquinaDeTuring
                 {
                     posicaoAtual--;
                 }
+                for(int i = -1; i < posicaoAtual; i++)
+                {
+                    fitaImprimir += "    ";
+                    
+                }
+                fitaImprimir += " | ";
+                form.UpdateAtualPub(fita.getFita());
+                form.UpdatePosPub(fitaImprimir);
+                
+                System.Threading.Thread.Sleep(100);
             }
-            atual.Text = fita.getFita();
-            pos.Text = "";
+
+            
             Console.WriteLine(fita.Valores);
         }
 
