@@ -9,4 +9,3 @@ Algoritmo de simulação de uma máquina de Turing para resolução do cálculo 
   
 <h6>@author: <a href="https://github.com/luandr">Luan Darabas</a> <br />
 @author: <a href="https://github.com/programmerGM">Maurício Generoso</a></h6>
-
